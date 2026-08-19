@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NVDA Startup Greeter</title>
+<style>
+@charset "utf-8";
+body {
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	line-height: 1.4em;
+	margin: 1em 2em;
+}
+h1, h2 { text-align: center }
+h1 { font-size: 1.6em }
+h2 {
+	font-size: 1.2em;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.2em;
+	margin-top: 1.6em;
+}
+dt {
+	font-weight: bold;
+	float: left;
+	width: 22%;
+	clear: left;
+}
+dd {
+	margin: 0 0 0.6em 0;
+	float: left;
+	width: 76%;
+	display: block;
+}
+p { clear: both; }
+ul { clear: both; }
+a { text-decoration: underline; }
+:active { text-decoration: none; }
+a:focus, a:hover { outline: solid; }
+</style>
+</head>
+<body>
+
+<h1>NVDA Startup Greeter</h1>
+
+<p>
+NVDA Startup Greeter announces that NVDA is ready to use as soon as it starts.
+By default it speaks a short, time-of-day greeting (&#8220;Good morning&#8221;,
+&#8220;Good afternoon&#8221;, or &#8220;Good evening&#8221;, followed by
+&#8220;NVDA is ready&#8221;), but you can replace it with your own messages
+&#8211; add several, and a different one is spoken each time NVDA starts.
+</p>
+
+<h2>Contents</h2>
+<ul>
+	<li><a href="#introduction">Introduction</a></li>
+	<li><a href="#features">Features</a></li>
+	<li><a href="#settings">Settings</a></li>
+	<li><a href="#changelog">Changelog</a></li>
+	<li><a href="#authorAndContact">Author and contact</a></li>
+	<li><a href="#license">License</a></li>
+</ul>
+
+<h2 id="introduction">Introduction</h2>
+<p>
+NVDA Startup Greeter gives you an instant, spoken confirmation that NVDA is
+up and running &#8211; right after logging in, after NVDA restarts, or after
+an update. No more wondering whether NVDA has finished loading: as soon as
+it's ready, you'll hear it. The greeting is designed to speak automatically,
+right away, with no key press needed.
+</p>
+
+<h2 id="features">Features</h2>
+<ul>
+	<li>Speaks automatically the moment NVDA is ready to use; no key press
+	required.</li>
+	<li>Time-of-day aware default greeting: Good morning (05:00&ndash;11:59),
+	Good afternoon (12:00&ndash;17:59), or Good evening (18:00&ndash;04:59),
+	followed by &#8220;NVDA is ready&#8221;.</li>
+	<li>Make it your own: add one or more custom messages to replace the
+	default greeting entirely, from a simple reminder to a personal welcome.</li>
+	<li>Added several messages? A different one is chosen each time NVDA
+	starts, never repeating the one from last time &#8211; so it never gets
+	stale.</li>
+	<li>Also shown on a connected braille display, so the confirmation is
+	available whichever way you work.</li>
+	<li>Fully optional: turn the greeting on or off at any time from NVDA
+	Settings.</li>
+</ul>
+
+<h2 id="settings">Settings</h2>
+<p>
+This add-on adds an <strong>NVDA Startup Greeter</strong> category to NVDA's
+Settings dialog:
+</p>
+<ol>
+	<li>Open the NVDA menu and choose <strong>Preferences &gt; Settings&#8230;</strong>
+	(or press <kbd>NVDA+control+g</kbd> if you have that gesture assigned).</li>
+	<li>Select the <strong>NVDA Startup Greeter</strong> category in the list on the left.</li>
+</ol>
+
+<dl>
+	<dt>Enable startup announcement</dt>
+	<dd>
+	Turns the startup greeting on or off. When unchecked, NVDA stays silent
+	when it starts and the custom message field below is disabled.
+	</dd>
+	<dt>Custom messages</dt>
+	<dd>
+	Leave this list empty to use the default time-of-day greeting. Use
+	<strong>Add&#8230;</strong> to add a message, select an existing one and use
+	<strong>Edit&#8230;</strong> to change it, or <strong>Remove</strong> to
+	delete it. If you add more than one message, a different one is spoken
+	each time NVDA starts (the one from last time is never repeated
+	immediately).
+	</dd>
+</dl>
+
+<h2 id="changelog">Changelog</h2>
+
+<h3>2026.09.09</h3>
+<ul>
+	<li>Initial release.</li>
+	<li>Speaks automatically as soon as NVDA finishes starting, with no key
+	press required.</li>
+	<li>Default greeting is time-of-day aware (good morning, afternoon, or
+	evening).</li>
+	<li>Add your own custom messages instead of the default greeting; if you
+	add more than one, a different one is spoken each time NVDA starts.</li>
+	<li>Adds an <strong>NVDA Startup Greeter</strong> category to NVDA
+	Settings to enable/disable the greeting or manage your custom
+	messages.</li>
+	<li>Also shows a matching message on a connected braille display.</li>
+</ul>
+
+<h2 id="authorAndContact">Author and contact</h2>
+<dl>
+	<dt>Author</dt>
+	<dd>Peem Narkkhwan (Sharetoyou)</dd>
+	<dt>Email</dt>
+	<dd><a href="mailto:sharetoyouaccess@gmail.com">sharetoyouaccess@gmail.com</a></dd>
+	<dt>More info</dt>
+	<dd><a href="https://www.youtube.com/channel/UCTDJ6htoRv0TV1YLpxg5qFQ">YouTube channel</a></dd>
+</dl>
+
+<h2 id="license">License</h2>
+<p>
+This add-on is released into the public domain. See <code>license.txt</code>
+in the add-on package for the full text.
+</p>
+
+</body>
+</html>
